@@ -11,33 +11,72 @@
     <script src="main.js"></script>
 </head>
 <body>
-    
-    <div class="d-flex flex-column flex-md-row  align-items-center p-4 mb-3 bg-dark text-white">
-        <h5 class="my-0 mr-md-auto">CAROLINA WEB PROZ</h5>
+
+    <!-- navigation header section -->
+    <div class="d-flex flex-column flex-md-row  align-items-center p-4  bg-dark text-white">
+        <h5 class="my-0 mr-md-auto">WEB PROZ</h5>
         <nav class="my-3 mr-md-3">
             <a href="#" class="p-2 text-white">About</a>
             <a href="#" class="p-2 text-white">Products</a>
             <a href="#" class="p-2 text-white">Pricing</a>
+            <a href="#" class="p-2 text-white">Contact Us</a>
         </nav>
         <a href="#" class="btn btn-outline-success">Client Portal</a>
     </div>
 
 
-    <div class="p-5 pt-md-5 pb-md-4 mx-auto text-center">
-        <h1 class="display-4">Design Packages</h1>
-        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur possimus fugit, tempora porro recusandae dignissimos maiores dicta beatae repudiandae minus! Animi dicta soluta hic magnam? Aliquam quas ea quod officia recusandae facere neque quisquam incidunt id minus, atque sed odit nesciunt error tempore autem asperiores? Nobis totam nostrum sed eius! Dolor ratione sit harum velit, nemo commodi optio, sapiente sequi in similique nihil odit neque.!</p>
+    <!-- hero image and call to action section -->
+    <div id="hero" class="mb-4">
+        <div class="container mr-5 text-white">
+            <p class="h1 display-4">N-Exx&trade; Cloud Services</p>
+            <p class="h4">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Rem, omnis.</p>
+            <button class="btn btn-success mt-3 mr-3">View A Demo</button> <button class="btn btn-success mt-3 mr-5">Learn More</button>
+        </div>
+    </div>
+
+    <!-- Who we've worked with -->
+    <div id="logos">
+        <img src="img/logos.jpeg" alt="">
     </div>
 
 
+    <!-- main content area -->
+    <div class="p-5 container pt-md-5 pb-md-4 mx-auto text-center">
+
+            <p class="lead container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat placeat ad, numquam nam beatae porro? Vitae ad et eveniet, deserunt nesciunt, tenetur doloremque numquam, suscipit sit ullam omnis ipsum dolore iure sint est? Aperiam eius nihil deleniti impedit aut magni unde vero eos temporibus beatae animi tempora ex excepturi, sed hic saepe ad repellendus aliquam harum numquam! Quis, unde maiores deleniti veniam minus totam, optio voluptatem reprehenderit dignissimos, modi animi hic reiciendis aut voluptas impedit culpa odio autem quisquam consectetur!</p>
+    
+            <hr>
+
+        <!-- Server Image Card  -->
+        <div class="card mt-3 mb-3">
+            <!-- Div containing server image in CSS -->
+            <div id="image-topper" class="card-img-top rounded">
+            </div>
+            <!-- Card Lower Text & Body -->
+            <div class="card-body">
+                <h5 class="card-title">Optimum Security | Blazing Speed | Unfailable Reliabilty </h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sapiente laborum, itaque aspernatur enim maxime..</p>
+                <p class="card-text h5">Server Status: <span class="text-success h5">Online</span> <small class="text-muted ml-2">(Last updated 2 mins ago)</small></p>
+            </div>
+        </div>
+
+
+        <!-- Design packages description -->
+        <h1 class="display-4">Design Packages</h1>
+        <p class="lead container">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur possimus fugit, tempora porro recusandae dignissimos maiores dicta beatae repudiandae minus! Animi dicta soluta hic magnam? Aliquam quas ea quod officia recusandae facere neque quisquam incidunt id minus, atque sed odit nesciunt error tempore autem asperiores? Nobis totam nostrum sed eius! Dolor ratione sit harum velit, nemo commodi optio, sapiente sequi in similique nihil odit neque.!</p>
+    </div>
+
+    <!-- Design package cards -->
     <div class="container">
        <div class="card-deck mb-5 text-center">
 
+        <!-- bronze card -->
         <div class="card m-4 shadow-sm">
             <div class="card-header">
                 <h4 class="my-0">SPRUCE UP</h4>
             </div>
             <div class="card-body">
-                <h1 class="card-title">$129</h1>
+                <h1 class="card-title">$149</h1>
                 <ul class="list-unstyled mt-3 mb-4">
                     <li>Make it POP</li>
                     <li>2x Bigger LOGO</li>
@@ -48,12 +87,13 @@
             </div>
         </div>
 
+        <!-- silver card -->
         <div class="card m-4 shadow-lg">
             <div class="card-header bg-dark text-white">
                 <h4 class="my-0">Prettify</h4>
             </div>
             <div class="card-body">
-                <h1 class="card-title">$199</h1>
+                <h1 class="card-title">$249</h1>
                 <ul class="list-unstyled mt-3 mb-4">
                     <li>Make it POP</li>
                     <li>3x Bigger LOGO</li>
@@ -64,12 +104,14 @@
             </div>
         </div>
 
+            <!-- gold card -->
             <div class="card m-4 shadow-sm">
                 <div class="card-header">
                     <h4 class="my-0">FACELIFE</h4>
                 </div>
                 <div class="card-body">
-                    <h1 class="card-title">$129</h1>                        <ul class="list-unstyled mt-3 mb-4">
+                    <h1 class="card-title">$399</h1>                       
+                    <ul class="list-unstyled mt-3 mb-4">
                         <li>Make it POP</li>
                         <li>4x Bigger LOGO</li>
                         <li>5 Revision</li>
@@ -81,21 +123,48 @@
 
        </div>
 
+
+       <!-- footer of course -->
        <footer class="my-md-5 pt-md-5 border-top">
             <div class="row">
                 
-                <div class="col-12 col-md">  
+                <div class="col-12 col-md">
+                    <small class="d-block mb-3 text-muted">&copy; 2018</small>  
+                </div>
+                
+                <!-- left col -->
+                <div class="col-4 col-md">
+                    <h5>Extra Items</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a href="#" class="text-muted">Bonus</a></li>
+                        <li><a href="#" class="text-muted">Features</a></li>
+                        <li><a href="#" class="text-muted">News</a></li>
+                        <li><a href="#" class="text-muted">Extras</a></li>
+                    </ul>
                 </div>
     
-                <div class="">
+                <!-- center col -->
+                <div class="col-4 col-md">
+                    <h5>Extra Items</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a href="#" class="text-muted">Bonus</a></li>
+                        <li><a href="#" class="text-muted">Features</a></li>
+                        <li><a href="#" class="text-muted">News</a></li>
+                        <li><a href="#" class="text-muted">Extras</a></li>
+                    </ul>
                 </div>
-    
-                <div class="">
+                
+                <!-- right col -->
+                <div class="col-4 col-md">
+                    <h5>Extra Items</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a href="#" class="text-muted">Bonus</a></li>
+                        <li><a href="#" class="text-muted">Features</a></li>
+                        <li><a href="#" class="text-muted">News</a></li>
+                        <li><a href="#" class="text-muted">Extras</a></li>
+                    </ul>
                 </div>
-    
-                <div class="">
-                </div>
-    
+
             </div>
         </footer>
 

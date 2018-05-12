@@ -1,0 +1,24 @@
+#hero {
+    height: 600px;
+    background-image: linear-gradient( rgba( 0, 0, 0, .2), rgba(0, 0, 0, .4)), url('../img/bg3.jpg');
+    background-position: center;
+    background-size: cover;
+    /* text-align: center; */
+}
+
+#hero div {
+    padding-top: 200px;
+}
+
+#image-topper {
+    height: 300px;
+    width: 100%;
+    background-image: linear-gradient( rgba( 0, 0, 0, .2), rgba(0, 200, 200, .2)),url('img/servers1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Logos bar */
+#logos {
+    text-align: center;
+} 
