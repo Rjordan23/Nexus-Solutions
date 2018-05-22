@@ -23,3 +23,30 @@
     text-align: center;
     opacity: .5;
 } 
+
+
+/* ////////////// */
+#images {
+    height: 500px;
+    background: red;
+}
+
+#images #lg-left {
+    /* width: 100%; */
+    height: 50%;
+    background: green;
+}
+
+#images #sm-right-top {
+    width: 49%;
+    background: blue;
+    height: 47%;
+    display: inline-block;
+}
+
+#images #sm-right-btm {
+    width: 49%;
+    background: yellow;
+    height: 47%;
+    display: inline-block;
+}
