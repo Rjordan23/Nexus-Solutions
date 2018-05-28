@@ -1,52 +1,154 @@
+/* Each page will have its own section
+in this single CSS file.  */
+
+
+/* Main index file CSS */
 #hero {
     height: 600px;
     background-image: linear-gradient( rgba( 0, 0, 0, .2), rgba(0, 0, 0, .4)), url('../img/bg3.jpg');
     background-position: center;
     background-size: cover;
-    /* text-align: center; */
 }
 
 #hero div {
     padding-top: 200px;
 }
 
-#image-topper {
-    height: 300px;
-    width: 100%;
-    background-image: linear-gradient( rgba( 0, 0, 0, .2), rgba(0, 200, 200, .2)),url('img/servers1.png');
-    background-size: cover;
-    background-position: center;
-}
-
 /* Logos bar */
 #logos {
     text-align: center;
-    opacity: .5;
+    opacity: .2;
 } 
 
 
 /* ////////////// */
 #images {
     height: 500px;
-    background: red;
 }
 
-#images #lg-left {
-    /* width: 100%; */
+/* top image container */
+#images #lg-top {
+    position: relative;
+    background-image: linear-gradient(to right, rgba(23, 162, 184, .9), rgba(0, 0, 0, .4) ), url('img/bg6.jpg');
+    background-size: cover;
+    background-position: center 20%;
     height: 50%;
-    background: green;
+    width: 100%;
+    color: #fff;
 }
 
-#images #sm-right-top {
+/* Non-hover text */
+#images .img-pre-text {
+    font-weight: 600;
+    font-size: 32px;
+    text-align: left;
+}
+
+/* hover text */
+#images .img-post-text {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .3);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s ease-in-out, visability .3s ease-in-out;
+}
+
+/* hover effect for text before hover */
+#images #lg-top:hover .img-pre-text {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3 ease-in-out;
+}
+
+
+/* post text hover effect */
+#images #lg-top:hover .img-post-text{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s ease-in-out, visability .3s ease-in-out;
+}
+
+#images #box-btm-left {
     width: 49%;
-    background: blue;
-    height: 47%;
+    background-image: url('img/bg7.jpg');
+    background-size: cover;
+    background-position: center right;
+    height: 48%;
     display: inline-block;
 }
 
-#images #sm-right-btm {
+#images #box-btm-right {
+    position: relative;
     width: 49%;
-    background: yellow;
-    height: 47%;
+    background-image:url('img/bg9.jpg');
+    background-size: cover;
+    height: 48%;
     display: inline-block;
 }
+
+#images #box-btm-right p {
+    position: absolute;
+    visibility: hidden;
+}
+
+#images #box-btm-right:hover {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .5) ), url('img/bg9.jpg');
+}
+
+
+#images #box-btm-right:hover p {
+    visibility: visible;
+}
+
+/* ///// NEW PAGE ////// Contact Page CSS ////// NEW PAGE ///// */
+#home-logo img {
+    width: 50px;
+    height: 40px;
+}
+
+
+#contact-hero {
+    height: 600px;
+    background-image: url('../img/office.jpg');
+    background-position: bottom center;
+    background-size: cover;
+}
+
+#contact-hero div {
+    padding-top: 200px;
+}
+
+.form-control:hover {
+    border: 1px solid rgb(23, 162, 184);
+}
+
+
+/* ///// NEW PAGE ////// Support Page CSS ////// NEW PAGE ///// */
+#support-hero {
+    height: 600px;
+    background-image: url('../img/comm-center.jpg');
+    background-position: top center;
+    background-size: cover;
+}
+
+#server-room {
+    height: 300px;
+    background-image: linear-gradient( rgba( 0, 0, 0, .1), rgba(23, 162, 184, .1)),url('img/servers1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-img-bottom {
+    width: 50%;
+    height: 10%;
+}
+
+
+
+
