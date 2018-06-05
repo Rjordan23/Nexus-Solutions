@@ -172,5 +172,31 @@ in this single CSS file.  */
     height: 100vh;
 }
 
+#support-left {
+    position: relative;
+}
+
+#left-txt-box {
+    position: absolute;
+    left:  30%;
+    top: 30%;
+}
+
+#support-right {
+    position: relative;
+    background-color: #ccc;
+    padding: 0;
+    margin: 0;
+}
+
+#right-form-box {
+    position: absolute;
+    width: 80%;
+    top: 30%;
+    background:  red;
+}
+
+
+
 
 
