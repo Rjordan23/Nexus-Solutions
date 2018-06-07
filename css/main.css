@@ -30,9 +30,9 @@ in this single CSS file.  */
 
 
 /* ////////////// */
-#images {
-    /* height: 500px; */
-}
+/* #images {
+
+} */
 
 /* top image container */
 #images #lg-top {
@@ -172,7 +172,7 @@ in this single CSS file.  */
     height: 100vh;
 }
 
-#support-left {
+#portal-left {
     position: relative;
 }
 
@@ -182,9 +182,8 @@ in this single CSS file.  */
     top: 30%;
 }
 
-#support-right {
+#portal-right {
     position: relative;
-    background-color: #ccc;
     padding: 0;
     margin: 0;
 }
@@ -193,7 +192,6 @@ in this single CSS file.  */
     position: absolute;
     width: 80%;
     top: 30%;
-    background:  red;
 }
 
 
