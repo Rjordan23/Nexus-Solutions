@@ -1,6 +1,12 @@
 /* Each page will have its own section
 in this single CSS file.  */
 
+/* //////// Universal or Multipage items /////// */
+/* Home a tag image (circuit) */
+#home-logo img {
+    width: 40px;
+    height: 30px;
+}
 
 /* Main index file CSS */
 #nav-bar {
@@ -112,12 +118,6 @@ in this single CSS file.  */
 }
 
 /* ///// NEW PAGE ////// Contact Page CSS ////// NEW PAGE ///// */
-#home-logo img {
-    width: 50px;
-    height: 40px;
-}
-
-
 #contact-hero {
     height: 600px;
     background-image: url('../img/office.jpg');
@@ -169,7 +169,7 @@ in this single CSS file.  */
 
 /* ///// NEW PAGE ////// Client Portal Page CSS ////// NEW PAGE ///// */
 #login {
-    height: 100vh;
+    height: 800px;
 }
 
 #portal-left {
@@ -179,7 +179,7 @@ in this single CSS file.  */
 #left-txt-box {
     position: absolute;
     left:  30%;
-    top: 30%;
+    top: 20%;
 }
 
 #portal-right {
@@ -191,7 +191,8 @@ in this single CSS file.  */
 #right-form-box {
     position: absolute;
     width: 80%;
-    top: 30%;
+    top: 20%;
+    left: 20%;
 }
 
 
