@@ -133,11 +133,19 @@ in this single CSS file.  */
     border: 1px solid rgb(23, 162, 184);
 }
 
+#campus {
+    background-image: url('../img/campus.jpg');
+    background-size: cover;
+    background-position: 80% 75%;
+    height: 350px;
+    width: 100%;
+}
+
 
 /* ///// NEW PAGE ////// Support Page CSS ////// NEW PAGE ///// */
 #support-hero {
     height: 600px;
-    background-image: url('../img/comm-center.jpg');
+    background-image: linear-gradient(rgba(0, 0 ,0 ,.1), rgba(0, 0, 0, .2)) ,url('../img/bg4.jpg');
     background-position: top center;
     background-size: cover;
 }
