@@ -1,7 +1,10 @@
-// var buzzWords = ['Google Apps Inegration', 'Email Integration', 'Self Service Portal', 'Mobile Access', 'Search Engine Optimization', 'Email Marketing'];
+// Support page show/hide live chat box
 
-// function randomWord(words) {
-//     return words[Math.floor(Math.random() * words.length)];
-// }
-
-// for(var x=0 x<20; x++)
+function display() {
+    var x = document.getElementById("live-help");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none"
+    }
+}

@@ -1,6 +1,10 @@
 /* Each page will have its own section
 in this single CSS file.  */
 
+body {
+    position: relative;
+}
+
 /* //////// Universal or Multipage items /////// */
 /* Home a tag image (circuit) */
 #home-logo img {
@@ -8,14 +12,25 @@ in this single CSS file.  */
     height: 30px;
 }
 
+.profile-pic {
+    /* border-radius: 50%; */
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+
 /* Main index file CSS */
 #nav-bar {
     margin: 0;
 }
 
+/* index hero image */
 #hero {
     height: 600px;
-    background-image: linear-gradient( rgba( 0, 0, 0, .1), rgba(0, 0, 0, .2)), url('../img/nexus-header.jpg');
+    background-image: linear-gradient( rgba( 0, 0, 0, .6), rgba(0, 0, 0, .2)), url('../img/nexus-header.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -145,8 +160,8 @@ in this single CSS file.  */
 /* ///// NEW PAGE ////// Support Page CSS ////// NEW PAGE ///// */
 #support-hero {
     height: 600px;
-    background-image: linear-gradient(rgba(0, 0 ,0 ,.1), rgba(0, 0, 0, .2)) ,url('../img/bg4.jpg');
-    background-position: top center;
+    background-image: linear-gradient(rgba(0, 0 ,0 ,.1), rgba(0, 0, 0, .2)) ,url('../img/support2.jpg');
+    background-position: center bottom;
     background-size: cover;
 }
 
@@ -156,12 +171,60 @@ in this single CSS file.  */
 
 .index {
     box-shadow: 2px 2px 0px rgba(0, 0, 0, .2);
-
+    border: 1px solid black;
 }
 
-.index:hover {
-    box-shadow: 2px 2px 0px rgba(0, 0, 0, .4);
+#live-help {
+    width: 400px;
+    background: white;
+    position: fixed;
+    right: 0;
+    top: 40%;
+    z-index: 2;
+    display: none;
 }
+
+.micro-text {
+    font-size: 10px;
+}
+
+#text-panel {
+    height: 180px;
+}
+
+#help-msg {
+    width: 80px;
+    height: 120px;
+    font-size: 20px;
+    position: fixed;
+    right: 0;
+    top: 40%;
+    z-index: 1;
+    transition: all .5s ease-in-out;
+}
+
+#help-pre {
+    padding: 0;
+    margin: 0;
+}
+
+.hdn-text {
+    opacity: 0;
+}
+
+#help-msg:hover  {
+    width: 250px;
+    transition: all .5s ease-in-out;
+    opacity: 1;
+}
+
+
+
+/* Think about adding this later */
+/* .index:hover {
+    box-shadow: 2px 2px 0px rgba(0, 100, 0, .4);
+    border: .5px solid rgba( 0, 100, 0, .9);
+} */
 
 #server-room {
     height: 300px;

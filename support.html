@@ -31,10 +31,52 @@
         </div>
     </div>
 
+    <!-- Live help window -->
+    <div id="live-help" class="border border-secondary container">
+        <div class="bg-success row text-white">
+            <h5 class="m-0 col-7 pt-1">Welcome to LiveHelp</h5>
+            <i onclick="display()" onclick="hide()" class="fas fa-comment-slash col-4 text-right mr-1 h5 mt-2"></i>
+        </div>
+        <!-- Tech Support info & image -->
+        <div class="row bg-light">
+            <div class="col-2 p-0">
+                <img class="profile-pic" src="img/ui-faces/image-14.png" alt="">
+            </div>
+            <div class="col-5 mt-2">
+                <h6 class="m-0">Kiersten Long</h6>
+                <small>Support Specialist</small>
+                <div class="text-left">
+                    <ul class="p-0 m-0">
+                        <li class="px-1"><i class="far fa-thumbs-up"></i></li>
+                        <li class="px-3"><i class="far fa-thumbs-down"></i></li>
+                        <li class=" px-1"><i class="fas fa-paperclip"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-5 text-center">
+                <i class="far fa-question-circle text-info h1 mt-3"></i>
+            </div>
+        </div>
+        <div id="supt-text" class="row bg-light">
+            <!-- Shared text box -->
+            <div id="text-panel" class="col-12 bg-white pt-3 pl-2">
+                <small class="text-muted m-0 p-0">Kiersten Long</small>
+                <p class="m-0 p-0">Hello, how may I assist you today?</p>
+            </div>
+            <textarea class="col-12" name="" id="" cols="" rows="3" placeholder="type your message here"></textarea>
+            <p class="micro-text col-12 text-center py-1 m-0">LiveHelp Powered by Aloc&trade;</p>
+        </div>
+    </div>
+
+    <div id="help-msg" onclick="display()" class="row bg-success text-white border border-secondary rounded">
+        <i class="fas fa-comment-dots col-2 mt-4 h1"></i>
+        <p id="help-pre" class="col-9 text-center mt-3">Need Help? <br> <span class="hdn-text">Click here and start chatting with us!</span></p>
+    </div>
+
     <!-- Seach header and search bar -->
     <div class="text-center bg-light py-5">
         <p class="display-4 mt-2 font-weight-normal">GET STARTED WITH SUPPORT</p>
-        <input type="search" class="col-lg-5 col-sm-6" placeholder="Search support or find a product"> <i class="p-1 h5 rounded bg-success text-white search fas fa-search "></i>
+        <input type="search" class="col-lg-5 col-sm-6" placeholder="Search support or find a product"> <i class="p-1 h5 rounded bg-info text-white search fas fa-search "></i>
     </div>
 
     <!-- Server status and details container -->
@@ -196,6 +238,7 @@
         </div>
     </footer>
 
+    <script src="/js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
