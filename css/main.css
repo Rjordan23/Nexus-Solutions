@@ -1,28 +1,21 @@
 /* Each page will have its own section
 in this single CSS file.  */
-
-body {
-    position: relative;
+Body {
+    padding-top: 57px;
 }
+
 
 /* //////// Universal or Multipage items /////// */
-/* Home a tag image (circuit) */
-#home-logo img {
-    width: 40px;
-    height: 30px;
-}
-
-.profile-pic {
-    /* border-radius: 50%; */
+.pointer {
+    cursor: pointer;
 }
 
 ul li {
     list-style: none;
-    display: inline-block;
 }
 
 
-/* Main index file CSS */
+/* ///// Main index file CSS ////// */
 #nav-bar {
     margin: 0;
 }
@@ -35,11 +28,6 @@ ul li {
     background-size: cover;
 }
 
-#hero div {
-    padding-top: 200px;
-}
-
-/* Logos bar */
 #logos {
     text-align: center;
     opacity: .2;
@@ -49,31 +37,16 @@ ul li {
     max-width: 100%;
 }
 
-
-/* ////////////// */
-/* #images {
-
-} */
-
 /* top image container */
 #images #lg-top {
-    position: relative;
     background-image: linear-gradient(to right, rgba(23, 162, 184, .9), rgba(0, 0, 0, .4) ), url('../img/connected-city.jpg');
     background-size: cover;
-    background-position: center 20%;
+    background-position: center 40%;
     height: 300px;
-    width: 100%;
-    color: #fff;
 }
 
-/* Non-hover text */
-#images .img-pre-text {
-    font-weight: 600;
-    font-size: 32px;
-    text-align: left;
-}
 
-/* hover text */
+/* hover text of image one */
 #images .img-post-text {
     position: absolute;
     height: 100%;
@@ -88,7 +61,7 @@ ul li {
     transition: opacity .3s ease-in-out, visability .3s ease-in-out;
 }
 
-/* hover effect for text before hover */
+/* hover effect for text before hover image 3 */
 #images #lg-top:hover .img-pre-text {
     visibility: hidden;
     opacity: 0;
@@ -96,7 +69,7 @@ ul li {
 }
 
 
-/* post text hover effect */
+/* post text hover effect image 3 */
 #images #lg-top:hover .img-post-text{
     visibility: visible;
     opacity: 1;
@@ -117,9 +90,7 @@ ul li {
     background-size: cover;
 }
 
-#images #box-btm-right p {
-    position: absolute;
-    top: 30%;
+#images #box-btm-right h4 {
     visibility: hidden;
 }
 
@@ -127,8 +98,7 @@ ul li {
     background-image: linear-gradient( to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4) ), url('../img/business-tech.jpg');
 }
 
-
-#images #box-btm-right:hover p {
+#images #box-btm-right:hover h4 {
     visibility: visible;
 }
 
@@ -148,6 +118,24 @@ ul li {
     border: 1px solid rgb(23, 162, 184);
 }
 
+#card-top-one {
+    background-image: url('/img/office1.jpeg');
+    background-size: cover;
+    height: 200px;
+}
+
+#card-top-two {
+    background-image: url('/img/office2.jpg');
+    background-size: cover;
+    height: 200px;
+}
+
+#card-top-three {
+    background-image: url('/img/office3.jpg');
+    background-size: cover;
+    height: 200px;
+}
+
 #campus {
     background-image: url('../img/campus.jpg');
     background-size: cover;
@@ -165,66 +153,168 @@ ul li {
     background-size: cover;
 }
 
-.search:hover {
-    cursor: pointer;
+hr {
+    width: 90%;
 }
 
-.index {
-    box-shadow: 2px 2px 0px rgba(0, 0, 0, .2);
-    border: 1px solid black;
-}
-
+/* The expanded live help window */
 #live-help {
     width: 400px;
     background: white;
     position: fixed;
-    right: 0;
+    right: .5%;
     top: 40%;
     z-index: 2;
+    box-shadow: -3px -2px 6px .5px rgba( 0, 0, 0, .2);
     display: none;
 }
 
+
+/* Small text at the bottom on large help window */
 .micro-text {
     font-size: 10px;
 }
 
+/* help text display box */
 #text-panel {
     height: 180px;
 }
 
-#help-msg {
-    width: 80px;
-    height: 120px;
-    font-size: 20px;
+#support-text-box {
+    border-top: .5px solid rgba( 0, 0, 0, .1);
+    border-bottom: .5px solid rgba( 0, 0, 0, .1);
+    border-left: none; 
+    border-right: none;
+}
+
+
+.fa-question-circle {
     position: fixed;
-    right: 0;
-    top: 40%;
+    right: .5%;
+    top: 60%;
+    font-size: 30px;
+    border-radius: 60px;
+    box-shadow: 0px 0px 6px .5px rgba(0, 0, 0, .5);
+    padding: 0.3em 0.3em;
     z-index: 1;
-    transition: all .5s ease-in-out;
 }
 
-#help-pre {
-    padding: 0;
-    margin: 0;
+/* card 0 */
+#unit-zero {
+    background-image: url('/img/support-tops/zero.png');
+    background-size: cover;
+    height: 200px;
 }
 
-.hdn-text {
-    opacity: 0;
+#unit-zero:hover {
+    background-image: url('/img/support-tops/zero-post.png');   
 }
 
-#help-msg:hover  {
-    width: 250px;
-    transition: all .5s ease-in-out;
-    opacity: 1;
+#unit-zero-btn {
+    background: #E85E70;
+    color: #ffffff;
 }
 
+#unit-zero-btn:hover {
+    background: #D45666;
+}
 
+/* card 1 */
+#unit-one {
+    background-image: url('/img/support-tops/one.png');
+    background-size: cover;
+    height: 200px;
+}
 
-/* Think about adding this later */
-/* .index:hover {
-    box-shadow: 2px 2px 0px rgba(0, 100, 0, .4);
-    border: .5px solid rgba( 0, 100, 0, .9);
-} */
+#unit-one:hover {
+    background-image: url('/img/support-tops/one-post.png');   
+}
+
+#unit-one-btn {
+    background: #E85E70;
+    color: #ffffff;
+}
+
+#unit-one-btn:hover {
+    background: #D45666;
+}
+
+/* card 2 */
+#unit-two {
+    background-image: url('/img/support-tops/two.png');
+    background-size: cover;
+    height: 200px;
+}
+
+#unit-two:hover {
+    background-image: url('/img/support-tops/two-post.png');
+    background-size: cover;
+    height: 200px;
+}
+
+#unit-two-btn {
+    background: #CA589E;
+    color: #ffffff;
+}
+
+#unit-two-btn:hover {
+    background: #B54F8E;
+}
+
+/* card 3 */
+#unit-three {
+    background-image: url('/img/support-tops/three.png');
+    background-size: cover;
+    height: 200px;
+}
+
+#unit-three:hover {
+    background-image: url('/img/support-tops/three-post.png');
+    background-size: cover;
+    height: 200px;
+}
+
+/* card 4 */
+#unit-four {
+    background-image: url('/img/support-tops/four.png');
+    background-size: cover;
+    height: 200px;
+}
+
+#unit-four:hover {
+    background-image: url('/img/support-tops/four-post.png');
+    background-size: cover;
+    height: 200px;
+}
+
+#unit-four-btn {
+    background: #2DB3AC;
+    color: #ffffff;
+}
+
+#unit-four-btn:hover {
+    background: #279C96;
+}
+
+/* card 5 */
+#unit-five {
+    background-image: url('/img/support-tops/five.png');
+    background-size: cover;
+    height: 200px;
+}
+
+#unit-five:hover {
+    background-image: url('/img/support-tops/five-post.png');   
+}
+
+#unit-five-btn {
+    background: #81BB5F;
+    color: #ffffff;
+}
+
+#unit-five-btn:hover {
+    background: #72A654;
+}
 
 #server-room {
     height: 300px;
@@ -233,40 +323,27 @@ ul li {
     background-position: center;
 }
 
-#support-list ul li {
-    margin: 4px 0;
-}
-
-
 /* ///// NEW PAGE ////// Client Portal Page CSS ////// NEW PAGE ///// */
+#screen {
+    height: 100vh;
+}
+
 #login {
-    height: 800px;
+    height: 100%;
 }
 
-#portal-left {
-    position: relative;
+/* Home a tag image (circuit) */
+#home-logo img {
+    width: 40px;
+    height: 30px;
 }
 
-#left-txt-box {
-    position: absolute;
-    left:  30%;
-    top: 20%;
+/* ///// NEW PAGE ////// Support Page CSS ////// NEW PAGE ///// */
+#services-hero {
+    height: 600px;
+    background-image: linear-gradient(90deg, rgba(2,0,36,.2) 0%, rgba(9,9,121,.2) 35%, rgba(0,212,255,.2) 100%),url('../img/world.jpg');
+    background-position: center bottom;
+    background-size: cover;
 }
-
-#portal-right {
-    position: relative;
-    padding: 0;
-    margin: 0;
-}
-
-#right-form-box {
-    position: absolute;
-    width: 80%;
-    top: 20%;
-    left: 20%;
-}
-
-
-
 
 
