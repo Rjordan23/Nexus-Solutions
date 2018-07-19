@@ -102,6 +102,10 @@ ul li {
     visibility: visible;
 }
 
+#strip-div {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .3)), url('img/office4.jpg');
+}
+
 /* ///// NEW PAGE ////// Contact Page CSS ////// NEW PAGE ///// */
 #contact-hero {
     height: 600px;
