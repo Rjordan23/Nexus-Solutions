@@ -4,6 +4,15 @@ Body {
     padding-top: 57px;
 }
 
+p {
+    font-size: 18px;
+    color: #555555;
+}
+
+.sm-text {
+    font-size: 15px;
+}
+
 
 /* //////// Universal or Multipage items /////// */
 .pointer {
@@ -103,7 +112,8 @@ ul li {
 }
 
 #strip-div {
-    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .3)), url('img/office4.jpg');
+    background-image: linear-gradient(to bottom, rgba(23, 162, 184, .9), rgba(30, 98, 110, 0.815) ), url('../img/office4.jpeg');
+    background-position-y: 60%;
 }
 
 /* ///// NEW PAGE ////// Contact Page CSS ////// NEW PAGE ///// */
@@ -120,6 +130,13 @@ ul li {
 
 .form-control:hover {
     border: 1px solid rgb(23, 162, 184);
+}
+
+#about-img {
+    width: 100%;
+    height: 200px;
+    background-image: url('../img/office5.jpeg');
+    background-position-y: 60%;
 }
 
 #card-top-one {
@@ -141,11 +158,8 @@ ul li {
 }
 
 #campus {
-    background-image: url('../img/campus.jpg');
-    background-size: cover;
-    background-position: 80% 75%;
     height: 350px;
-    width: 100%;
+    border: 2px solid green;
 }
 
 
@@ -157,9 +171,9 @@ ul li {
     background-size: cover;
 }
 
-hr {
+/* hr {
     width: 90%;
-}
+} */
 
 /* The expanded live help window */
 #live-help {
@@ -345,9 +359,75 @@ hr {
 /* ///// NEW PAGE ////// Services Page CSS ////// NEW PAGE ///// */
 #services-hero {
     height: 600px;
-    background-image: linear-gradient(90deg, rgba(2,0,36,.2) 0%, rgba(9,9,121,.2) 35%, rgba(0,212,255,.2) 100%),url('../img/world.jpg');
-    background-position: center bottom;
+    background-image: url('../img/architecture-buildings-city-533930.jpg');
+    background-position-y: 50%;
+    background-position-x: 70%;
     background-size: cover;
 }
 
+#nav-path {
+    background-color: #DAE1E6;
+}
 
+.highlight {
+    padding: 15px 0;
+    color: black;
+}
+
+.highlight:hover {
+ background: white;
+ color: black;
+}
+
+#saas-img {
+    width: 100%;
+}
+
+#paas-img {
+    width: 90%;
+}
+
+#iaas-img {
+    width: 90%;
+}
+
+#market-img {
+    width: 80%;
+}
+
+
+#tech-tree {
+
+}
+
+.user-profile-img {
+    border-radius: 50%;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+    /* //// Services Page //// */
+    #saas-img {
+        margin-top: 30%;
+    }
+    
+    #paas-img {
+        margin-top: 20%;
+    }
+    
+    #iaas-img {
+        margin-top: 40%;
+    }
+    
+    #market-img {
+        margin-top: 25%;
+    }
+    
+    
+    #tech-tree {
+        /* width: 100%; */
+        /* height: 50%; */
+    }
+
+}
