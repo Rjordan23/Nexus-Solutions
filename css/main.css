@@ -116,6 +116,7 @@ ul li {
     background-position-y: 60%;
 }
 
+
 /* ///// NEW PAGE ////// Contact Page CSS ////// NEW PAGE ///// */
 #contact-hero {
     height: 600px;
@@ -136,6 +137,7 @@ ul li {
     width: 100%;
     height: 200px;
     background-image: url('../img/office5.jpeg');
+    background-size: cover;
     background-position-y: 60%;
 }
 
@@ -170,10 +172,6 @@ ul li {
     background-position: center bottom;
     background-size: cover;
 }
-
-/* hr {
-    width: 90%;
-} */
 
 /* The expanded live help window */
 #live-help {
@@ -384,50 +382,146 @@ ul li {
 }
 
 #paas-img {
-    width: 90%;
+    width: 100%;
 }
 
 #iaas-img {
-    width: 90%;
+    width: 100%;
 }
 
 #market-img {
-    width: 80%;
-}
-
-
-#tech-tree {
-
+    width: 90%;
 }
 
 .user-profile-img {
     border-radius: 50%;
 }
 
+/* //// Footer //// */
+#new-img {
+    width: 40%;
+}
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+#solutions-img {
+    width: 40%;
+}
 
-    /* //// Services Page //// */
+#trials-img {
+    width: 40%;
+}
+
+#sm-address {
+    border-right: 1px solid rgba(109, 109, 109, 0.385);
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 991px) {
+    Body {
+        padding-top: 0px;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+    /* Contant Page Images */
+    #about-img {
+        background-position-y: 60%;
+        background-position-x: center;
+    }
+    
+    #card-top-two {
+        background-position-x: 50%;
+        background-position-y: 40%;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    /* Support Page */
+    #support-hero {
+       background-position: 70% bottom ;
+       background-size: cover;
+   }
+}
+
+@media only screen and (min-width: 567px) and (max-width: 767px) {
+    /* Services Page */
     #saas-img {
-        margin-top: 30%;
+        width: 70%;
     }
     
     #paas-img {
-        margin-top: 20%;
+        width: 70%;
     }
     
     #iaas-img {
-        margin-top: 40%;
+        width: 70%;
     }
     
     #market-img {
-        margin-top: 25%;
-    }
-    
-    
-    #tech-tree {
-        /* width: 100%; */
-        /* height: 50%; */
+        width: 60%;
     }
 
+    /* Support Page */
+    #support-hero {
+        background-position: right bottom ;
+        background-size: cover;
+    }
+
+    /* Contact Page */
+    #about-img {
+        background-size: cover;
+    }
+    
+    #card-top-two {
+        background-position-x: center;
+        background-position-y: 40%;
+    }
 }
+
+@media only screen and (min-width: 0px) and (max-width: 567px) {
+    /* Contact Page */
+    #about-img {
+        background-size: cover;
+        background-position-x: center;
+    }
+
+    /* //// Footer //// */
+#new-img {
+    width: 50%;
+}
+
+#solutions-img {
+    width: 50%;
+}
+
+#trials-img {
+    width: 50%;
+}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 307px) {
+    #sm-social-list {
+        display: none;
+    }
+
+    #sm-address {
+        border: none;
+    }
+
+    #customer-spotlight {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 287px) {
+    #remove-me {
+        display: none;
+    }
+
+    #market-row {
+        display:none;
+    }
+}
+
+
+
+

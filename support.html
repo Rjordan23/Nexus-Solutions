@@ -14,7 +14,7 @@
 
 
      <!-- //// navigation header section //// -->
-   <div class="px-3 px-md-2 pt-lg-2 py-md-1 py-sm-0 py-0 container-fluid bg-dark text-white fixed-top">
+   <div class="px-3 px-md-2 pt-lg-2 py-md-1 py-sm-0 py-0 container-fluid bg-dark text-white fixed-top d-lg-block d-md-none d-small-none d-none">
         <div class="row px-lg-4 px-md-5 px-sm-1 px-0">
             <a class="btn col-lg-2 col-md-12 col-sm-12 pt-2 pt-md-1 pl-md-2 pl-0 m-0" href="index.html"><h3 class="text-info p-0 m-0">Nexus <span class="text-white">Solutions</span></h3></a>
             <ul class="col-lg-10 col-md-12 col-sm-12 col-12 mt-0 mt-sm-0 pt-lg-1 pt-md-1 px-lg-0 text-lg-right text-md-center text-sm-center text-center">
@@ -26,6 +26,25 @@
             </ul>
         </div>
     </div>
+
+    <!--Navbar for small screens-->
+    <nav class="navbar navbar-light amber lighten-4 fixed-top bg-dark d-lg-none d-md-block d-sm-block d-block">
+        <!-- Navbar brand -->
+        <a class=" navbar-brand " href="index.html"><h3 class="text-info p-0 m-0">Nexus <span class="text-white">Solutions</span></h3></a>
+        <!-- Collapse button -->
+        <button class="navbar-toggler bg-info float-right mt-1 mr-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20" aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation"><div class="animated-icon1"><span></span><span></span><span></span></div><i class="fas fa-bars text-white"></i></button>
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent20">
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link text-light" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="industries.html">Industries</a></li>
+                <!-- <li class="nav-item"><a class="nav-link text-light" href="support.html">Support</a></li> -->
+                <li class="nav-item"><a class="nav-link text-light" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="client-portal.html">Client Portal</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- //// hero image and call to action section ///// -->
     <div id="support-hero"></div>
@@ -73,15 +92,13 @@
 
     <!-- //// Support Intro Text //// -->
     <section class="container-fluid mt-4 ">
-        <div class="row justify-content-center">
-            <div class="col-lg-9 col-md-8 col-sm-10 col-11 text-left">
-                <h2>Product Documentaion</h2>
-                <p>Interactively procrastinate high-payoff content without backward-compatible data. Quickly cultivate optimal processes and tactical architectures. Completely iterate covalent strategic theme areas via accurate e-markets. Credibly innovate granular internal or "organic" sources whereas high standards in web-readiness. Energistically scale future-proof core competencies vis-a-vis impactful experiences. Dramatically synthesize integrated schemas with optimal networks.</p>
-                <div>
-                    <input type="search" class="col-lg-8 col-md-11 col-10 my-3" placeholder="Search support or find a product by serial number"> <i class="p-1 h5 rounded text-dark border text-white search fas fa-search pointer"></i>
-                </div>
+        <div class="row ">
+            <div class="col-lg-10 col-md-8 col-sm-12 col-12 text-left text-sm-center text-center">
+                <h1>Product Documentaion</h1>
+                <p class="col-lg-10 col-md-10 col-sm-12 col-12 mx-auto text-lg-left">Interactively procrastinate high-payoff content without backward-compatible data. Quickly cultivate optimal processes and tactical architectures. Completely iterate covalent strategic theme areas via accurate e-markets. Credibly innovate granular internal or "organic" sources whereas high standards in web-readiness. Energistically scale future-proof core competencies vis-a-vis impactful experiences. Dramatically synthesize integrated schemas with optimal networks.</p>
+                <input type="search" class="col-lg-8 col-md-11 col-10 my-3" placeholder="Search support or find a product by serial number"> <i class="p-1 h5 rounded text-dark border text-white search fas fa-search pointer"></i>
             </div>
-            <div id="cloud" class="col-lg-2 col-md-4 col-sm-1 p-0 mt-md-5 text-center">
+            <div id="cloud" class="col-lg-2 col-md-2 col-sm-1 p-0 mt-md-5 text-left d-lg-block d-md-block d-sm-none d-none">
                 <img src="/img/support-tops/Nexus.png" alt="">
             </div>
         </div>
@@ -108,7 +125,7 @@
         <!-- Row 0 -->    
         <div class="row text-justify justify-content-center mt-5 mb-lg-4">
             <!-- card 1 -->
-            <div class="card col-lg-4 col-md-8 col-sm-12 col-11 mx-2 mb-md-3 mb-3 p-0">
+            <div class="card col-lg-4 col-md-8 col-sm-8 col-11 mx-2 mb-md-3 mb-3 p-0">
                 <div id="unit-zero" class="">
                 </div>
                 <div class="card-body">
@@ -125,7 +142,7 @@
         <!-- Row 1 -->      
         <div class="row text-center justify-content-center mb-lg-4 mb-md-4">
             <!-- card 1 -->
-            <div class="card col-lg-4 col-md-5 col-11 p-0 mr-lg-4 mr-md-4 mb-3">
+            <div class="card col-lg-4 col-md-5 col-sm-8 col-11  p-0 mr-lg-4 mr-md-4 mb-3">
                 <div id="unit-one" class="">
                 </div>
                 <div class="card-body">
@@ -135,7 +152,7 @@
                 </div>
             </div>
             <!-- card 2 -->
-            <div class="card col-lg-4 col-md-5 col-11 p-0 ml-lg-4 ml-md-4 mb-3">
+            <div class="card col-lg-4 col-md-5 col-sm-8 col-11 p-0 ml-lg-4 ml-md-4 mb-3">
                 <div id="unit-two" class="">
                 </div>
                 <div class="card-body">
@@ -149,7 +166,7 @@
         <!-- Row 2 -->
         <div class="row text-center justify-content-center mb-lg-4 mb-md-3">
             <!-- card 3-->
-            <div class="card col-lg-4 col-md-5 col-sm-10 col-11 p-0 mr-lg-4 mr-md-4 mb-3">
+            <div class="card col-lg-4 col-md-5 col-sm-8 col-11 p-0 mr-lg-4 mr-md-4 mb-3">
                 <div id="unit-three" class="">
                 </div>
                 <div class="card-body">
@@ -159,7 +176,7 @@
                 </div>
             </div>
             <!-- card 4-->
-            <div class="card col-lg-4 col-md-5 col-sm-10 col-11 p-0 ml-lg-4 ml-md-4 mb-3">
+            <div class="card col-lg-4 col-md-5 col-sm-8 col-11 p-0 ml-lg-4 ml-md-4 mb-3">
                 <div id="unit-four" class="">
                 </div>
                 <div class="card-body">
@@ -173,7 +190,7 @@
          <!-- Row 3 -->    
         <div class="row text-center justify-content-center mb-5">
             <!-- card 5 -->
-            <div class="card col-lg-4 col-md-8 col-sm-12 col-11 mx-2 p-0">
+            <div class="card col-lg-4 col-md-8 col-sm-8 col-11  mx-2 p-0">
                 <div id="unit-five" class="">
                 </div>
                 <div class="card-body">
@@ -188,17 +205,17 @@
     <!-- //// Application Services ////  -->
     <section class="container-fluid">
         <div class="row">
-            <div class="col-lg-10 col-md-9">
+            <div class="col-lg-7 col-md-7 col-sm-9 col-9 text-center">
                 <h3 class="text-muted pl-5 pt-5">Application Services</h3>
             </div>
-            <div class="col-lg-2 col-md-3 col-sm-12 text-center">
+            <div class="col-lg-5 col-md-5 col-sm-3 col-3 px-0 text-left">
                 <img id="apps-img" src="/img/support-tops/apps2.png" alt="">
             </div>
         </div>
         <hr>
        <div class="row justify-content-center text-center">
            <!-- Col 1 -->
-            <div class="col-lg-3 col-md-3">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-8">
                 <ul class="list-unstyled">
                     <li><a href="#">Marketing</a></li>
                     <li><a href="#">Sales</a></li>
@@ -208,7 +225,7 @@
                 </ul>
             </div>
             <!-- Col 2 -->
-            <div class="col-lg-3 col-md-3">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-8">
                 <ul class="list-unstyled">
                     <li><a href="#">Financials</a></li>
                     <li><a href="#">Monetization</a></li>
@@ -218,7 +235,7 @@
                 </ul>
             </div>
             <!-- Col 3 -->
-            <div class="col-lg-3 col-md-3">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-8">
                 <ul class="list-unstyled">
                     <li><a href="#">Global HR</a></li>
                     <li><a href="#">Talent Management</a></li>
@@ -227,7 +244,7 @@
                     <li><a href="#">Fleet Monitoring</a></li>
                 </ul>
             </div>
-            <div class="col-lg-3 col-md-3">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-8">
                 <ul class="list-unstyled">
                     <li><a href="#">IoT</a></li>
                     <li><a href="#">Block Chain</a></li>
@@ -239,67 +256,156 @@
         </div>
     </section>
 
-        <!-- footer of course -->
-        <footer class="container-fluid bg-light pt-4 px-5 border-top">
-            <div class="row text-center">
-                        
-            <!-- Company Info -->
-            <div class="col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-3">
-                <p class="mb-1 h3"><span class="text-info">Nexus</span> Solutions</p>
+    <!-- //// Mobile Footer //// -->
+    <div id="mobile-footer" class="d-lg-none d-md-block d-sm-block d-block mt-4 border border-top">
+        <!-- //// Company News Footer for small screens //// -->
+        <nav class="navbar navbar-light amber lighten-4 py-1 bg-light pt-4 px-4 pb-2">
+            <!-- Navbar brand -->
+            <a class="navbar-brand" href="#"><h6 class="text-info mb-0">Company News</h6></a>
+            <!-- Collapse button -->
+            <button class="navbar-toggler bg-info float-right mr-2" type="button" data-toggle="collapse" data-target="#footerContent1" aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation"><div class="animated-icon1"><span></span><span></span><span></span></div><i class="fas fa-plus text-white"></i></button>
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse row" id="footerContent1">
+                <!-- Links -->
+                <ul class="navbar-nav mr-auto px-3 col-6">
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Newsroom</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Events</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Product Announcements</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Extra</a></li>
+                </ul>
+                <div class="col-6 text-center">
+                    <img id="new-img" src="img/globe.png" alt="">
+                </div>
+            </div>
+        </nav>
+
+        <!-- //// Solutions Footer for small screens //// -->
+        <nav class="navbar navbar-light amber lighten-4 py-1 bg-light py-3 px-4">
+            <!-- Navbar brand -->
+            <a class=" navbar-brand " href="#"><h6 class="text-info mb-0">Solutions</h6></a>
+            <!-- Collapse button -->
+            <button class="navbar-toggler bg-info float-right mr-2" type="button" data-toggle="collapse" data-target="#footerContent2" aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation"><div class="animated-icon1"><span></span><span></span><span></span></div><i class="fas fa-plus text-white"></i></button>
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse row" id="footerContent2">
+                <!-- Links -->
+                <ul class="navbar-nav mr-auto px-3 col-6">
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Integrations</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">User Onboarding</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">App Onboarding</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Mobile Tooltips</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">App Personalization</a></li>
+                </ul>
+                <!-- IMG -->
+                <div class="col-6 text-center">
+                    <img id="solutions-img" src="img/Snap-surveys-solutions.png" alt="">
+                </div>
+            </div>
+        </nav>
+
+        <!-- //// Support Footer for small screens //// -->
+        <nav class="navbar navbar-light amber lighten-4 py-1 bg-light pb-0 px-4">
+            <!-- Navbar brand -->
+            <a class=" navbar-brand " href="#"><h6 class="text-info mb-0">Downloads <span id="remove-me">and Trials</span></h6></a>
+            <!-- Collapse button -->
+            <button class="navbar-toggler bg-info float-right mr-2" type="button" data-toggle="collapse" data-target="#footerContent3" aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation"><div class="animated-icon1"><span></span><span></span><span></span></div><i class="fas fa-plus text-white"></i></button>
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse row" id="footerContent3">
+                <!-- Links -->
+                <ul class="navbar-nav mr-auto px-3 col-6">
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Integrations</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">User Onboarding</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">App Onboarding</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Mobile Tooltips</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">App Personalization</a></li>
+                </ul>
+                <div class="col-6 text-center">
+                    <img id="trials-img" src="img/download-icon.png" alt="">
+                </div>
+            </div>
+        </nav>
+        <!-- Company Address and Social Media -->
+        <div class="container-fluid row bg-light py-4 m-0">
+            <div id="sm-address" class="col-md-6 col-sm-6 col-6 px-2 ">
+                <p class="mb-0 h3"><span class="text-info">Nexus</span> Solutions</p>
                 <ul class="list-unstyled mb-2">
                     <li>604 State St</li>
                     <li>Morrisville, NC 27560</li>
                 </ul>
-                <!-- Social media icons -->
-                <div class="text-info">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><i class="fab fa-facebook-f"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-twitter"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-linkedin-in"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-youtube"></i></li>
-                    </ul>                        
-                </div>
             </div>
-                    
-            <!-- left col -->
-            <div class="col-lg-3 col-md-2 col-sm-6 col-6 mt-lg-0 mt-md-0 mt-3">
-                <h6 class="mb-1">COMPANY</h6>
-                <ul class="list-unstyled text-small">
-                    <li><a href="#" class="text-muted">Newsroom</a></li>
-                    <li><a href="#" class="text-muted">Events</a></li>
-                    <li><a href="#" class="text-muted">News</a></li>
-                    <li><a href="#" class="text-muted">Extras</a></li>
+             <!-- Social media icons -->
+             <div id="sm-social-list" class="text-info col-md-6 col-sm-6 col-6">
+                <ul class="list-inline text-center py-4 m-0">
+                    <li class="list-inline-item"><i class="fab fa-facebook-f h5"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-twitter h5"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-linkedin-in h5"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-youtube h5"></i></li>
                 </ul>
-            </div>
-        
-            <!-- center col -->
-            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
-                <h6 class="mb-1">SOLUTIONS</h6>
-                <ul class="list-unstyled text-small">
-                    <li><a href="#" class="text-muted">Integrations</a></li>                      
-                    <li><a href="#" class="text-muted">User Onboarding</a></li>
-                    <li><a href="#" class="text-muted">App Onboarding</a></li>                        
-                    <li><a href="#" class="text-muted">Mobile Tooltips</a></li>
-                    <li><a href="#" class="text-muted">App Personalization</a></li>
-                </ul>
-            </div>
-                    
-                <!-- right col -->
-                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
-                    <h6 class="mb-1">SUPPORT</h6>
-                    <ul class="list-unstyled text-small">
-                        <li><a href="#" class="text-muted">Product Demo</a></li>
-                        <li><a href="#" class="text-muted"> Product Success</a></li>
-                        <li><a href="#" class="text-muted">Product Success</a></li>
-                        <li><a href="#" class="text-muted">Product Engagement</a></li>                   
-                    </ul>
-                </div>
-            </div>
-        
-            <div class="text-center mt-3 text-dark">
-                <p class="m-0">&copy; 2018 Ramsey Jordan</p>
-            </div>
-        </footer>
+            </div>            
+        </div>
+        <h6 class="text-center bg-light m-0 text-muted">&copy; Jordan Web Services LLC 2018</h6>
+    </div>
+    
+    <!--Large Screen footer of course -->
+    <footer class="container-fluid bg-light pt-4 px-5 border-top d-lg-block d-md-none d-sm-none d-none mt-lg-4">
+        <div class="row text-center">
+                
+    <!-- Company Info -->
+    <div class="col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-3">
+        <p class="mb-1 h3"><span class="text-info">Nexus</span> Solutions</p>
+        <ul class="list-unstyled mb-2">
+            <li>604 State St</li>
+            <li>Morrisville, NC 27560</li>
+        </ul>
+        <!-- Social media icons -->
+        <div class="text-info">
+            <ul class="list-inline">
+                <li class="list-inline-item"><i class="fab fa-facebook-f"></i></li>
+                <li class="list-inline-item"><i class="fab fa-twitter"></i></li>
+                <li class="list-inline-item"><i class="fab fa-linkedin-in"></i></li>
+                <li class="list-inline-item"><i class="fab fa-youtube"></i></li>
+            </ul>                        
+        </div>
+    </div>
+            
+    <!-- left col -->
+    <div class="col-lg-3 col-md-2 col-sm-6 col-6 mt-lg-0 mt-md-0 mt-3">
+        <h6 class="mb-1">COMPANY</h6>
+        <ul class="list-unstyled text-small">
+            <li><a href="#" class="text-muted">Newsroom</a></li>
+            <li><a href="#" class="text-muted">Events</a></li>
+            <li><a href="#" class="text-muted">News</a></li>
+            <li><a href="#" class="text-muted">Extras</a></li>
+        </ul>
+    </div>
+
+    <!-- center col -->
+    <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+        <h6 class="mb-1">SOLUTIONS</h6>
+        <ul class="list-unstyled text-small">
+            <li><a href="#" class="text-muted">Integrations</a></li>                      
+            <li><a href="#" class="text-muted">User Onboarding</a></li>
+            <li><a href="#" class="text-muted">App Onboarding</a></li>                        
+            <li><a href="#" class="text-muted">Mobile Tooltips</a></li>
+            <li><a href="#" class="text-muted">App Personalization</a></li>
+        </ul>
+    </div>
+            
+        <!-- right col -->
+        <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+            <h6 class="mb-1">SUPPORT</h6>
+            <ul class="list-unstyled text-small">
+                <li><a href="#" class="text-muted">Product Demo</a></li>
+                <li><a href="#" class="text-muted"> Product Success</a></li>
+                <li><a href="#" class="text-muted">Product Success</a></li>
+                <li><a href="#" class="text-muted">Product Engagement</a></li>                   
+            </ul>
+        </div>
+    </div>
+
+    <div class="text-center mt-3 text-dark">
+        <p class="m-0">&copy; 2018 Ramsey Jordan</p>
+    </div>
+    </footer>
 
     <script src="/js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

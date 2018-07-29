@@ -15,7 +15,7 @@
     <div id="screen">
 
         <!-- //// navigation header section //// -->
-        <div class="px-3 px-md-2 py-1 container-fluid bg-dark text-white fixed-top">
+        <div class="px-3 px-md-2 py-1 container-fluid bg-dark text-white fixed-top d-lg-block d-md-none d-small-none d-none">
             <div class="row px-lg-4 px-md-5">
                 <a class="btn col-lg-2 col-md-12 col-sm-12 pt-3 pt-md-1 m-0 pl-md-2" href="index.html"><h3 class="text-info p-0 m-0">Nexus <span class="text-white">Solutions</span></h3></a>
                 <ul class="col-lg-10 col-md-12 col-sm-12 col-12 mt-0 mt-sm-1 pt-lg-1 pt-md-1 pt-1 px-lg-0 text-lg-right text-md-center text-sm-center text-center">
@@ -26,6 +26,25 @@
                 </ul>
             </div>
         </div>
+
+        <!--Navbar for small screens-->
+        <nav class="navbar navbar-light amber lighten-4 fixed-top bg-dark d-lg-none d-md-block d-sm-block d-block">
+            <!-- Navbar brand -->
+            <a class=" navbar-brand " href="index.html"><h3 class="text-info p-0 m-0">Nexus <span class="text-white">Solutions</span></h3></a>
+            <!-- Collapse button -->
+            <button class="navbar-toggler bg-info float-right mt-1 mr-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20" aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation"><div class="animated-icon1"><span></span><span></span><span></span></div><i class="fas fa-bars text-white"></i></button>
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent20">
+                <!-- Links -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link text-light" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="industries.html">Industries</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="support.html">Support</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="contact.html">Contact</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link text-light badge badge-success p-2" href="client-portal.html">Client Portal</a></li> -->
+                </ul>
+            </div>
+        </nav>
 
 
         <div id="login" class="container-fluid">
