@@ -50,18 +50,18 @@
         <div id="login" class="container-fluid">
             <div class="row h-100">
                 <!-- Left side of page -->
-                <div id="portal-left" class="col-lg-6 col-12 pt-5 bg-white d-inline-block  text-center">
-                    <div id="left-txt-box" class="col-lg-6 col-md-8 col-sm-2 mt-5 pt-5 mx-auto h-40 py-3">
+                <div id="portal-left" class="col-lg-6 col-12 pt-lg-5 pt-md-4 py-sm-3 bg-white text-center">
+                    <div id="left-txt-box" class="col-lg-6 col-md-8 col-sm-6 mt-5 pt-5 mx-auto h-40 py-3">
                         <small class="mr-md-auto ml-4"><a id="home-logo" href="index.html"><img class="mb-2" src="img/future.png" alt=""></a> <span class="text-info">NEXUS</span> SOLUTIONS</small>
                         <p class="mb-1 pt-4 h2">Client Portal</p>
-                        <p class="mt-4 display-4 text-info">Login to<br><span class="text-success">Continue</span></p>
+                        <p class="mt-3 display-4 text-info">Login to<br><span class="text-success">Continue</span></p>
                         <small class="text-black-50">Cookies must be enabled</small>
                     </div>
                 </div>
 
                 <!-- Right side of page -->
-                <div id="portal-right" class="col-lg-6 pt-lg-5 col-md-12 pt-md-0 col-12 pt-5 bg-light p-0 d-inline-block">
-                    <div id="right-form-box" class="mx-auto mt-5 pt-4 col-lg-6 mt-lg-5 col-md-6 mt-md-0">
+                <div id="portal-right h-100" class="col-lg-6 pt-lg-5 col-md-12 pt-md-0 col-sm-12 pt-sm-0 col-12 pt-3 bg-light p-0 d-inline-block">
+                    <div id="right-form-box" class="mx-auto col-lg-6 col-md-6 col-sm-8 col-7 mt-lg-5 mt-md-0 mt-sm-0 mt-0 py-sm-5 py-3">
                         <form action="#">
                             <label for="username" class="text-muted">Username:</label>
                             <div>
@@ -86,66 +86,156 @@
                 </div>
             </div>
         </div>
-
-        <!-- footer of course -->
-        <footer class="container-fluid bg-light pt-4 px-5 border-top d-lg-block d-md-block d-sm-block d-none">
-            <div class="row text-center">
-                    
-                <!-- Company Info -->
-                <div class="col-lg-3 col-md-3 text-center mb-3">
-                    <p class="mb-1 h3"><span class="text-info">Nexus</span> Solutions</p>
+        
+        <!-- //// Mobile Footer //// -->
+    <div id="mobile-footer" class="d-lg-none d-md-block d-sm-block d-block">
+            <!-- //// Company News Footer for small screens //// -->
+            <nav class="navbar navbar-light amber lighten-4 py-1 bg-light pt-4 px-4 pb-2">
+                <!-- Navbar brand -->
+                <a class="navbar-brand" href="#"><h6 class="text-info mb-0">Company News</h6></a>
+                <!-- Collapse button -->
+                <button class="navbar-toggler bg-info float-right mr-2" type="button" data-toggle="collapse" data-target="#footerContent1" aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation"><div class="animated-icon1"><span></span><span></span><span></span></div><i class="fas fa-plus text-white"></i></button>
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse row" id="footerContent1">
+                    <!-- Links -->
+                    <ul class="navbar-nav mr-auto px-3 col-6">
+                        <li class="nav-item"><a class="nav-link text-dark" href="#">Newsroom</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="#">Events</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="#">Product Announcements</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="#">Extra</a></li>
+                    </ul>
+                    <div class="col-6 text-center">
+                        <img id="new-img" src="img/globe.png" alt="">
+                    </div>
+                </div>
+            </nav>
+    
+            <!-- //// Solutions Footer for small screens //// -->
+            <nav class="navbar navbar-light amber lighten-4 py-1 bg-light py-3 px-4">
+                <!-- Navbar brand -->
+                <a class=" navbar-brand " href="#"><h6 class="text-info mb-0">Solutions</h6></a>
+                <!-- Collapse button -->
+                <button class="navbar-toggler bg-info float-right mr-2" type="button" data-toggle="collapse" data-target="#footerContent2" aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation"><div class="animated-icon1"><span></span><span></span><span></span></div><i class="fas fa-plus text-white"></i></button>
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse row" id="footerContent2">
+                    <!-- Links -->
+                    <ul class="navbar-nav mr-auto px-3 col-6">
+                        <li class="nav-item"><a class="nav-link text-dark" href="#">Integrations</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="#">User Onboarding</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="#">App Onboarding</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="#">Mobile Tooltips</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="#">App Personalization</a></li>
+                    </ul>
+                    <!-- IMG -->
+                    <div class="col-6 text-center">
+                        <img id="solutions-img" src="img/Snap-surveys-solutions.png" alt="">
+                    </div>
+                </div>
+            </nav>
+    
+            <!-- //// Support Footer for small screens //// -->
+            <nav class="navbar navbar-light amber lighten-4 py-1 bg-light pb-0 px-4">
+                <!-- Navbar brand -->
+                <a class=" navbar-brand " href="#"><h6 class="text-info mb-0">Downloads <span id="remove-me">and Trials</span></h6></a>
+                <!-- Collapse button -->
+                <button class="navbar-toggler bg-info float-right mr-2" type="button" data-toggle="collapse" data-target="#footerContent3" aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation"><div class="animated-icon1"><span></span><span></span><span></span></div><i class="fas fa-plus text-white"></i></button>
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse row" id="footerContent3">
+                    <!-- Links -->
+                    <ul class="navbar-nav mr-auto px-3 col-6">
+                        <li class="nav-item"><a class="nav-link text-dark" href="#">Integrations</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="#">User Onboarding</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="#">App Onboarding</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="#">Mobile Tooltips</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="#">App Personalization</a></li>
+                    </ul>
+                    <div class="col-6 text-center">
+                        <img id="trials-img" src="img/download-icon.png" alt="">
+                    </div>
+                </div>
+            </nav>
+            <!-- Company Address and Social Media -->
+            <div class="container-fluid row bg-light py-4 m-0">
+                <div id="sm-address" class="col-md-6 col-sm-6 col-6 px-2 ">
+                    <p class="mb-0 h3"><span class="text-info">Nexus</span> Solutions</p>
                     <ul class="list-unstyled mb-2">
                         <li>604 State St</li>
                         <li>Morrisville, NC 27560</li>
                     </ul>
-                    <!-- Social media icons -->
-                    <div class="text-info">
-                       <ul class="list-inline">
-                            <li class="list-inline-item"><i class="fab fa-facebook-f"></i></li>
-                            <li class="list-inline-item"><i class="fab fa-twitter"></i></li>
-                            <li class="list-inline-item"><i class="fab fa-linkedin-in"></i></li>
-                            <li class="list-inline-item"><i class="fab fa-youtube"></i></li>
-                        </ul>                        
-                    </div>
                 </div>
-                    
-                <!-- left col -->
-                <div class="col-lg-3 col-md-2">
-                    <h6 class="mb-1">COMPANY</h6>
-                    <ul class="list-unstyled text-small">
-                        <li><a href="#" class="text-muted">Newsroom</a></li>
-                        <li><a href="#" class="text-muted">Events</a></li>
-                        <li><a href="#" class="text-muted">News</a></li>
-                        <li><a href="#" class="text-muted">Extras</a></li>
+                 <!-- Social media icons -->
+                 <div id="sm-social-list" class="text-info col-md-6 col-sm-6 col-6 px-0">
+                    <ul class="list-inline text-center py-4 m-0">
+                        <li class="list-inline-item"><i class="fab fa-facebook-f fa-2x"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-twitter fa-2x"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-linkedin-in fa-2x"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-youtube fa-2x"></i></li>
                     </ul>
-                </div>
+                </div>            
+            </div>
+            <h6 class="text-center bg-light m-0 text-muted">&copy; Jordan Web Services LLC 2018</h6>
+        </div>
         
-                <!-- center col -->
-                <div class="col-lg-3 col-md-3">
-                    <h6 class="mb-1">SOLUTIONS</h6>
-                    <ul class="list-unstyled text-small">
-                        <li><a href="#" class="text-muted">Integrations</a></li>    
-                        <li><a href="#" class="text-muted">User Onboarding</a></li>
-                        <li><a href="#" class="text-muted">App Onboarding</a></li>                        
-                        <li><a href="#" class="text-muted">Mobile Tooltips</a></li>
-                        <li><a href="#" class="text-muted">App Personalization</a></li>
-                    </ul>
-                </div>
+        <!--Large Screen footer of course -->
+        <footer class="container-fluid bg-light pt-4 px-5 border-top d-lg-block d-md-none d-sm-none d-none">
+            <div class="row text-center">
                     
-                <!-- right col -->
-                <div class="col-lg-3 col-md-3">
-                    <h6 class="mb-1">SUPPORT</h6>
-                    <ul class="list-unstyled text-small">
-                        <li><a href="#" class="text-muted">Product Demo</a></li>
-                        <li><a href="#" class="text-muted"> Product Success</a></li>
-                        <li><a href="#" class="text-muted">Product Success</a></li>
-                        <li><a href="#" class="text-muted">Product Engagement</a></li>                   
-                    </ul>
-                </div>
+        <!-- Company Info -->
+        <div class="col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-3">
+            <p class="mb-1 h3"><span class="text-info">Nexus</span> Solutions</p>
+            <ul class="list-unstyled mb-2">
+                <li>604 State St</li>
+                <li>Morrisville, NC 27560</li>
+            </ul>
+            <!-- Social media icons -->
+            <div class="text-info">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><i class="fab fa-facebook-f"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-twitter"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-linkedin-in"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-youtube"></i></li>
+                </ul>                        
             </div>
-            <div class="text-center mt-3 text-dark">
-                <p class="m-0 font-weight-bold">&copy; 2018 Ramsey Jordan</p>
+        </div>
+                
+        <!-- left col -->
+        <div class="col-lg-3 col-md-2 col-sm-6 col-6 mt-lg-0 mt-md-0 mt-3">
+            <h6 class="mb-1">COMPANY</h6>
+            <ul class="list-unstyled text-small">
+                <li><a href="#" class="text-muted">Newsroom</a></li>
+                <li><a href="#" class="text-muted">Events</a></li>
+                <li><a href="#" class="text-muted">News</a></li>
+                <li><a href="#" class="text-muted">Extras</a></li>
+            </ul>
+        </div>
+    
+        <!-- center col -->
+        <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+            <h6 class="mb-1">SOLUTIONS</h6>
+            <ul class="list-unstyled text-small">
+                <li><a href="#" class="text-muted">Integrations</a></li>                      
+                <li><a href="#" class="text-muted">User Onboarding</a></li>
+                <li><a href="#" class="text-muted">App Onboarding</a></li>                        
+                <li><a href="#" class="text-muted">Mobile Tooltips</a></li>
+                <li><a href="#" class="text-muted">App Personalization</a></li>
+            </ul>
+        </div>
+                
+            <!-- right col -->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                <h6 class="mb-1">SUPPORT</h6>
+                <ul class="list-unstyled text-small">
+                    <li><a href="#" class="text-muted">Product Demo</a></li>
+                    <li><a href="#" class="text-muted"> Product Success</a></li>
+                    <li><a href="#" class="text-muted">Product Success</a></li>
+                    <li><a href="#" class="text-muted">Product Engagement</a></li>                   
+                </ul>
             </div>
+        </div>
+    
+        <div class="text-center mt-3 text-dark">
+            <p class="m-0">&copy; 2018 Ramsey Jordan</p>
+        </div>
         </footer>
     </div>
 
