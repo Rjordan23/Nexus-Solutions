@@ -1,5 +1,3 @@
-/* Each page will have its own section
-in this single CSS file.  */
 Body {
     padding-top: 57px;
     font-size: 16px;
@@ -14,7 +12,6 @@ p {
     font-size: 15px;
 }
 
-
 /* //////// Universal or Multipage items /////// */
 .pointer {
     cursor: pointer;
@@ -23,7 +20,6 @@ p {
 ul li {
     list-style: none;
 }
-
 
 /* ///// Main index file CSS ////// */
 #nav-bar {
@@ -53,41 +49,45 @@ ul li {
 
 /* top image container */
 #images #lg-top {
-    background-image: linear-gradient(to right, rgba(23, 162, 184, .9), rgba(0, 0, 0, .4) ), url('../img/connected-city.jpg');
+    background-image: linear-gradient(to right, rgba(23, 162, 184, .8), rgba(0, 0, 0, .6) ), url('../img/connected-city.jpg');
     background-size: cover;
     background-position: center 40%;
     height: 300px;
 }
 
-
 /* hover text of image one */
 #images .img-post-text {
     position: absolute;
+    width: 80%;
+    margin: 0 auto;
     height: 100%;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, .3);
     color: #fff;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 5s ease-in-out, visability 5s ease-in-out;
+}
+
+/* Large top image hover effect */
+#images #lg-top:hover {
+    background-image: linear-gradient(to right, rgba(23, 162, 184, .9), rgba(0, 0, 0, .8) ), url('../img/connected-city.jpg');
+    transition: all .3s ease;
 }
 
 /* hover effect for text before hover image 3 */
 #images #lg-top:hover .img-pre-text {
     visibility: hidden;
     opacity: 0;
-    transition: all 4 ease-in-out;
+    transition: all .1s ease;
 }
-
 
 /* post text hover effect image 3 */
 #images #lg-top:hover .img-post-text{
     visibility: visible;
     opacity: 1;
-    transition: opacity .3s ease-in-out, visability .3s ease-in-out;
+    transition: all .2s ease-in;
 }
 
 #images #box-btm-left {
@@ -114,13 +114,13 @@ ul li {
 
 #images #box-btm-right:hover h4 {
     visibility: visible;
+    transition: all .4s ease-in-out;
 }
 
 #strip-div {
     background-image: linear-gradient(to bottom, rgba(23, 162, 184, .9), rgba(30, 98, 110, 0.815) ), url('../img/office4.jpeg');
     background-position-y: 60%;
 }
-
 
 /* ///// NEW PAGE ////// Contact Page CSS ////// NEW PAGE ///// */
 #contact-hero {
@@ -169,7 +169,6 @@ ul li {
     border: 2px solid green;
 }
 
-
 /* ///// NEW PAGE ////// Support Page CSS ////// NEW PAGE ///// */
 #support-hero {
     height: 600px;
@@ -190,7 +189,6 @@ ul li {
     display: none;
 }
 
-
 /* Small text at the bottom on large help window */
 .micro-text {
     font-size: 10px;
@@ -208,7 +206,6 @@ ul li {
     border-right: none;
 }
 
-
 .fa-question-circle {
     position: fixed;
     right: .5%;
@@ -225,10 +222,12 @@ ul li {
     background-image: url('/img/support-tops/zero.png');
     background-size: cover;
     height: 200px;
+    transition: all .3s ease-in-out;
 }
 
 #unit-zero:hover {
-    background-image: url('/img/support-tops/zero-post.png');   
+    background-image: url('/img/support-tops/zero-post.png');
+    transition: all .3s ease-in-out;
 }
 
 #unit-zero-btn {
@@ -245,10 +244,12 @@ ul li {
     background-image: url('/img/support-tops/one.png');
     background-size: cover;
     height: 200px;
+    transition: all .3s ease-in-out;
 }
 
 #unit-one:hover {
-    background-image: url('/img/support-tops/one-post.png');   
+    background-image: url('/img/support-tops/one-post.png');
+    transition: all .3s ease-in-out;
 }
 
 #unit-one-btn {
@@ -265,12 +266,14 @@ ul li {
     background-image: url('/img/support-tops/two.png');
     background-size: cover;
     height: 200px;
+    transition: all .3s ease-in-out;
 }
 
 #unit-two:hover {
     background-image: url('/img/support-tops/two-post.png');
     background-size: cover;
     height: 200px;
+    transition: all .3s ease-in-out;
 }
 
 #unit-two-btn {
@@ -287,12 +290,14 @@ ul li {
     background-image: url('/img/support-tops/three.png');
     background-size: cover;
     height: 200px;
+    transition: all .3s ease-in-out;
 }
 
 #unit-three:hover {
     background-image: url('/img/support-tops/three-post.png');
     background-size: cover;
     height: 200px;
+    transition: all .3s ease-in-out;
 }
 
 /* card 4 */
@@ -300,12 +305,14 @@ ul li {
     background-image: url('/img/support-tops/four.png');
     background-size: cover;
     height: 200px;
+    transition: all .3s ease-in-out;
 }
 
 #unit-four:hover {
     background-image: url('/img/support-tops/four-post.png');
     background-size: cover;
     height: 200px;
+    transition: all .3s ease-in-out;
 }
 
 #unit-four-btn {
@@ -322,10 +329,12 @@ ul li {
     background-image: url('/img/support-tops/five.png');
     background-size: cover;
     height: 200px;
+    transition: all .3s ease-in-out;
 }
 
 #unit-five:hover {
-    background-image: url('/img/support-tops/five-post.png');   
+    background-image: url('/img/support-tops/five-post.png');
+    transition: all .3s ease-in-out;
 }
 
 #unit-five-btn {
@@ -464,6 +473,11 @@ ul li {
         background-position-x: 40%;
     }
 
+    .img-pre-text {
+        font-size: 1.8rem;
+    }
+    
+
     #cta-text {
         font-size: 4.5rem;
     }
@@ -510,6 +524,11 @@ ul li {
 
     #cta-text {
         font-size: 4rem;
+    }
+
+    .img-pre-text {
+        font-size: 1.7rem;
+        padding-top: 80px;
     }
     
     
