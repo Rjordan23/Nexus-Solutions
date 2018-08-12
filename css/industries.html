@@ -12,15 +12,14 @@
 </head>
 <body>
 
-
-     <!-- //// navigation header section //// -->
-   <div class="px-3 px-md-2 pt-lg-2 py-md-1 py-sm-0 py-0 container-fluid bg-dark text-white fixed-top d-lg-block d-md-none d-small-none d-none">
+    <!-- //// navigation header section //// -->
+    <div class="px-3 px-md-2 pt-lg-2 py-md-1 py-sm-0 py-0 container-fluid bg-dark text-white fixed-top d-lg-block d-md-none d-small-none d-none">
         <div class="row px-lg-4 px-md-5 px-sm-1 px-0">
             <a class="btn col-lg-2 col-md-12 col-sm-12 pt-2 pt-md-1 pl-md-2 pl-0 m-0" href="index.html"><h3 class="text-info p-0 m-0">Nexus <span class="text-white">Solutions</span></h3></a>
             <ul class="col-lg-10 col-md-12 col-sm-12 col-12 mt-0 mt-sm-0 pt-lg-1 pt-md-1 px-lg-0 text-lg-right text-md-center text-sm-center text-center">
-                <li class="d-inline h6"><a href="services.html" class="p-lg-2 p-md-2 p-1 text-white">Services</a></li>
+                <li class="d-inline h5"><a href="services.html" class="p-lg-2 p-md-2 p-2 badge badge-info text-white">Services</a></li>
                 <li class="d-inline h6"><a href="industries.html" class="p-lg-2 p-md-2 p-1 text-white">Industries</a></li>
-                <li class="d-inline h5"><a href="support.html" class="p-lg-2 p-md-2 p-2 badge badge-info text-white">Support</a></li>
+                <li class="d-inline h6"><a href="support.html" class="p-lg-2 p-md-2 p-1  text-white">Support</a></li>
                 <li class="d-inline h6"><a href="contact.html" class="p-lg-2 p-md-2 p-1 mr-lg-2 mr-md-2 text-white">Contact</a></li>                
                 <li class="d-inline h5"><a href="client-portal.html" class="text-white mt-lg-0 mt-md-0 mt-2 badge badge-success px-3 py-2 active">Client Portal</a></li>                
             </ul>
@@ -37,9 +36,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent20">
             <!-- Links -->
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link text-light" href="services.html">Services</a></li>
+                <!-- <li class="nav-item"><a class="nav-link text-info" href="services.html">Services</a></li> -->
                 <li class="nav-item"><a class="nav-link text-light" href="industries.html">Industries</a></li>
-                <!-- <li class="nav-item"><a class="nav-link text-light" href="support.html">Support</a></li> -->
+                <li class="nav-item"><a class="nav-link text-light" href="support.html">Support</a></li>
                 <li class="nav-item"><a class="nav-link text-light" href="contact.html">Contact</a></li>
                 <li class="nav-item"><a class="nav-link text-light" href="client-portal.html">Client Portal</a></li>
             </ul>
@@ -47,214 +46,43 @@
     </nav>
 
     <!-- //// hero image and call to action section ///// -->
-    <div id="support-hero"></div>
+    <div id="services-hero"></div>
 
-    <!-- //// Live help window with text chat box //// -->
-    <div id="live-help" class="container">
-        <div class="bg-info row text-white">
-            <h5 class="m-0 col-7 pt-1">Welcome to LiveHelp</h5>
-            <i onclick="display()" onclick="hide()" class="fas fa-comment-slash col-4 text-right mr-1 h5 mt-2 pointer"></i>
-        </div>
-        <!-- Tech Support info & image -->
-        <div class="row bg-light">
-            <div class="col-2 p-0">
-                <img class="profile-pic" src="img/ui-faces/image-14.png" alt="">
-            </div>
-            <div class="col-5 mt-2">
-                <h6 class="m-0">Kiersten Long</h6>
-                <small>Support Specialist</small>
-                <div class="text-left">
-                    <ul class="p-0 m-0">
-                        <li class="d-inline px-1"><i class="far fa-thumbs-up pointer"></i></li>
-                        <li class="d-inline px-3"><i class="far fa-thumbs-down pointer"></i></li>
-                        <li class="d-inline px-1"><i class="fas fa-paperclip pointer"></i></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-5 text-center">
-                <i class="fas fa-id-badge text-info h1 mt-3"></i>
-                <p>level 4</p>
-            </div>
-        </div>
-        <div id="supt-text" class="row bg-light">
-            <!-- Shared text box -->
-            <div id="text-panel" class="col-12 bg-white pt-3 pl-2">
-                <small class="text-muted m-0 p-0">Kiersten Long</small>
-                <p class="m-0 p-0">Hello, how may I assist you today?</p>
-            </div>
-            <textarea id="support-text-box" class="col-12 bg-light" name="" id="" cols="" rows="3" placeholder="type your message here"></textarea>
-            <p class="micro-text col-12 text-center py-1 m-0">LiveHelp Powered by Aloc&trade;</p>
-        </div>
+    <!-- //// Services Navigator //// -->
+    <div id="nav-path" class="fixed-bottom mt-5 d-lg-block d-md-none d-sm-none d-none">
+        <ul class="row text-center m-0 p-0">
+            <li class="d-inline border-right col-3 highlight"><a href="#saas" class="highlight">Software as a Service</a></li>
+            <li class="d-inline border-right col-3 highlight"><a href="#paas" class="highlight">Platform as a Service</a></li>
+            <li class="d-inline border-right col-3 highlight"><a href="#iaas" class="highlight">Infrastructure as a Service</a></li>
+            <li class="d-inline border-right col-3 highlight"><a href="#market" class="highlight">N-Exx Marketplace</a></li>
+        </ul>
     </div>
 
-    <!-- //// Floating help button ////  -->
-    <i onclick="display()" class="fas fa-question-circle h1 text-info bg-light pointer text-center d-md-block d-sm-none d-none"><br><span class="h6 p-0 m-0">Need</span><br><span class="h6 p-0 m-0">Help?</span></i>
 
-    <!-- //// Support Intro Text //// -->
-    <section class="container-fluid mt-4 ">
-        <div class="row ">
-            <div class="col-lg-10 col-md-8 col-sm-12 col-12 text-left text-sm-center text-center">
-                <h1>Product Documentaion</h1>
-                <p class="col-lg-10 col-md-10 col-sm-12 col-12 mx-auto text-lg-left">Interactively procrastinate high-payoff content without backward-compatible data. Quickly cultivate optimal processes and tactical architectures. Completely iterate covalent strategic theme areas via accurate e-markets. Credibly innovate granular internal or "organic" sources whereas high standards in web-readiness. Energistically scale future-proof core competencies vis-a-vis impactful experiences. Dramatically synthesize integrated schemas with optimal networks.</p>
-                <input type="search" class="col-lg-8 col-md-11 col-10 my-3" placeholder="Search support or find a product by serial number"> <i class="p-1 h5 rounded text-dark border text-white search fas fa-search pointer"></i>
-            </div>
-            <div id="cloud" class="col-lg-2 col-md-2 col-sm-1 p-0 mt-md-5 text-left d-lg-block d-md-block d-sm-none d-none">
-                <img src="/img/support-tops/Nexus.png" alt="">
-            </div>
-        </div>
-    </section>
 
-    <!-- Server status and details container -->
-    <!-- <div class="container py-5 text-center"> -->
-        <!-- Server Image Card -->
-        <!-- <div class="card"> -->
-            <!-- Div containing server image in CSS -->
-            <!-- <div id="server-room" class="card-img-top rounded">
-            </div> -->
-            <!-- Card Lower Text & Body -->
-            <!-- <div class="card-body">
-                <h5 class="card-title mt-2">Optimum Security | Blazing Speed | Unfailable Reliabilty</h5>
-                <p class="card-text ">Zero-defect test cases have featue-packed feedback. A search engine is more elegant than an elegant operating system. We can finish the disclosures by implementing the root user, but it has to be both digital and command-line.</p>
-                <p class="card-text h5">Server Status: <span class="text-success h5">Online</span> <small class="text-muted ml-2">(Last updated 2 mins ago)</small></p>
-            </div>
-        </div>
-    </div> -->
 
-    <div class="container-fluid">
-        <hr>
-        <!-- Row 0 -->    
-        <div class="row text-justify justify-content-center mt-5 mb-lg-4">
-            <!-- card 1 -->
-            <div class="card col-lg-4 col-md-8 col-sm-8 col-11 mx-2 mb-md-3 mb-3 p-0">
-                <div id="unit-zero" class="">
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title mt-0">Get Started</h4>
-                    <p class="card-text">Proactively fabricate one-to-one materials via effective e-business. Completely synergize scalable e-commerce rather than high standards in e-services. Assertively iterate resource maximizing products after leading-edge intellectual capital. </p>
-                    <div class="text-center">
-                        <button id="unit-zero-btn" type="button" class="btn col-md-4">View</button>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
 
-        <!-- Row 1 -->      
-        <div class="row text-center justify-content-center mb-lg-4 mb-md-4">
-            <!-- card 1 -->
-            <div class="card col-lg-4 col-md-5 col-sm-8 col-11  p-0 mr-lg-4 mr-md-4 mb-3">
-                <div id="unit-one" class="">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title mt-2">Guided Problem Solving</h5>
-                    <p class="card-text">Leverage analytics buzz strategy customer network effects. Crowdfunding twitter buyer iPad innovator stealth value proposition hackathon.</p>
-                    <button id="unit-one-btn" type="button" class="btn col-md-4">View</button>
-                </div>
-            </div>
-            <!-- card 2 -->
-            <div class="card col-lg-4 col-md-5 col-sm-8 col-11 p-0 ml-lg-4 ml-md-4 mb-3">
-                <div id="unit-two" class="">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title mt-2">Product Documentation</h5>
-                    <p class="card-text">A/B testing investor backing virality hypotheses pivot agreement non-disclosure agreement startup innovator prototype product management.</p>
-                    <button id="unit-two-btn" type="button" class="btn col-md-4">View</button>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Row 2 -->
-        <div class="row text-center justify-content-center mb-lg-4 mb-md-3">
-            <!-- card 3-->
-            <div class="card col-lg-4 col-md-5 col-sm-8 col-11 p-0 mr-lg-4 mr-md-4 mb-3">
-                <div id="unit-three" class="">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title mt-2">Support Quick Links</h5>
-                    <p class="card-text"> Innovator termsheet angel investor startup business model canvas buyer founders user experience incubator MVP network effects launch party social media iPad.</p>
-                    <button type="button" class="btn btn-info col-md-4">View</button>
-                </div>
-            </div>
-            <!-- card 4-->
-            <div class="card col-lg-4 col-md-5 col-sm-8 col-11 p-0 ml-lg-4 ml-md-4 mb-3">
-                <div id="unit-four" class="">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title mt-2">FAQ</h5>
-                    <p class="card-text">Founders holy grail burn rate sales pitch value proposition client. Paradigm shift rockstar MVP assets investor return on iteration bootstrapping pivot vesting period.</p>
-                    <button id="unit-four-btn" type="button" class="btn col-md-4">View</button>
-                </div>
-            </div>
-        </div>
-        
-         <!-- Row 3 -->    
-        <div class="row text-center justify-content-center mb-5">
-            <!-- card 5 -->
-            <div class="card col-lg-4 col-md-8 col-sm-8 col-11  mx-2 p-0">
-                <div id="unit-five" class="">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title mt-2">Report An Issue</h5>
-                    <p class="card-text">Proactively fabricate one-to-one materials via effective e-business. Completely synergize scalable e-commerce rather than high standards in e-services. Assertively iterate resource maximizing products after leading-edge intellectual capital. </p>
-                    <button id="unit-five-btn" type="button" class="btn col-md-4">Begin</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- //// Application Services ////  -->
-    <section class="container-fluid">
-        <div class="row">
-            <div class="col-lg-7 col-md-7 col-sm-9 col-9 text-center">
-                <h3 class="text-muted pl-5 pt-5">Application Services</h3>
-            </div>
-            <div class="col-lg-5 col-md-5 col-sm-3 col-3 px-0 text-left">
-                <img id="apps-img" src="/img/support-tops/apps2.png" alt="">
-            </div>
-        </div>
-        <hr>
-       <div class="row justify-content-center text-center">
-           <!-- Col 1 -->
-            <div class="col-lg-3 col-md-6 col-sm-6 col-8">
-                <ul class="list-unstyled">
-                    <li><a href="#">Marketing</a></li>
-                    <li><a href="#">Sales</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Field Services</a></li>
-                    <li><a href="#">System Change Calendar</a></li>
-                </ul>
-            </div>
-            <!-- Col 2 -->
-            <div class="col-lg-3 col-md-6 col-sm-6 col-8">
-                <ul class="list-unstyled">
-                    <li><a href="#">Financials</a></li>
-                    <li><a href="#">Monetization</a></li>
-                    <li><a href="#">Procurement</a></li>
-                    <li><a href="#">Risk Management</a></li>
-                    <li><a href="#">Portfolio Management</a></li>
-                </ul>
-            </div>
-            <!-- Col 3 -->
-            <div class="col-lg-3 col-md-6 col-sm-6 col-8">
-                <ul class="list-unstyled">
-                    <li><a href="#">Global HR</a></li>
-                    <li><a href="#">Talent Management</a></li>
-                    <li><a href="#">Asset Monitoring</a></li>
-                    <li><a href="#">Connected Worker</a></li>
-                    <li><a href="#">Fleet Monitoring</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-8">
-                <ul class="list-unstyled">
-                    <li><a href="#">IoT</a></li>
-                    <li><a href="#">Block Chain</a></li>
-                    <li><a href="#">Big Data</a></li>
-                    <li><a href="#">Mobile Support</a></li>
-                    <li><a href="#">Cloud Analytics</a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- //// Mobile Footer //// -->
     <div id="mobile-footer" class="d-lg-none d-md-block d-sm-block d-block mt-4 border border-top">
@@ -408,6 +236,7 @@
     </footer>
 
     <script src="/js/main.js"></script>
+    <script src="/js/scroll.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
