@@ -147,19 +147,19 @@ ul li {
 }
 
 #card-top-one {
-    background-image: url('/img/office1.jpeg');
+    background-image: url('../img/office1.jpeg');
     background-size: cover;
     height: 200px;
 }
 
 #card-top-two {
-    background-image: url('/img/office2.jpg');
+    background-image: url('../img/office2.jpg');
     background-size: cover;
     height: 200px;
 }
 
 #card-top-three {
-    background-image: url('/img/office3.jpg');
+    background-image: url('../img/office3.jpg');
     background-size: cover;
     height: 200px;
 }
@@ -219,14 +219,14 @@ ul li {
 
 /* card 0 */
 #unit-zero {
-    background-image: url('/img/support-tops/zero.png');
+    background-image: url('../img/support-tops/zero.png');
     background-size: cover;
     height: 200px;
     transition: all .3s ease-in-out;
 }
 
 #unit-zero:hover {
-    background-image: url('/img/support-tops/zero-post.png');
+    background-image: url('../img/support-tops/zero-post.png');
     transition: all .3s ease-in-out;
 }
 
@@ -241,14 +241,14 @@ ul li {
 
 /* card 1 */
 #unit-one {
-    background-image: url('/img/support-tops/one.png');
+    background-image: url('../img/support-tops/one.png');
     background-size: cover;
     height: 200px;
     transition: all .3s ease-in-out;
 }
 
 #unit-one:hover {
-    background-image: url('/img/support-tops/one-post.png');
+    background-image: url('../img/support-tops/one-post.png');
     transition: all .3s ease-in-out;
 }
 
@@ -263,14 +263,14 @@ ul li {
 
 /* card 2 */
 #unit-two {
-    background-image: url('/img/support-tops/two.png');
+    background-image: url('../img/support-tops/two.png');
     background-size: cover;
     height: 200px;
     transition: all .3s ease-in-out;
 }
 
 #unit-two:hover {
-    background-image: url('/img/support-tops/two-post.png');
+    background-image: url('../img/support-tops/two-post.png');
     background-size: cover;
     height: 200px;
     transition: all .3s ease-in-out;
@@ -287,14 +287,14 @@ ul li {
 
 /* card 3 */
 #unit-three {
-    background-image: url('/img/support-tops/three.png');
+    background-image: url('../img/support-tops/three.png');
     background-size: cover;
     height: 200px;
     transition: all .3s ease-in-out;
 }
 
 #unit-three:hover {
-    background-image: url('/img/support-tops/three-post.png');
+    background-image: url('../img/support-tops/three-post.png');
     background-size: cover;
     height: 200px;
     transition: all .3s ease-in-out;
@@ -302,14 +302,14 @@ ul li {
 
 /* card 4 */
 #unit-four {
-    background-image: url('/img/support-tops/four.png');
+    background-image: url('../img/support-tops/four.png');
     background-size: cover;
     height: 200px;
     transition: all .3s ease-in-out;
 }
 
 #unit-four:hover {
-    background-image: url('/img/support-tops/four-post.png');
+    background-image: url('../img/support-tops/four-post.png');
     background-size: cover;
     height: 200px;
     transition: all .3s ease-in-out;
@@ -326,14 +326,14 @@ ul li {
 
 /* card 5 */
 #unit-five {
-    background-image: url('/img/support-tops/five.png');
+    background-image: url('../img/support-tops/five.png');
     background-size: cover;
     height: 200px;
     transition: all .3s ease-in-out;
 }
 
 #unit-five:hover {
-    background-image: url('/img/support-tops/five-post.png');
+    background-image: url('../img/support-tops/five-post.png');
     transition: all .3s ease-in-out;
 }
 
