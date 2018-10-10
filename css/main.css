@@ -29,7 +29,7 @@ ul li {
 /* index hero image */
 #hero {
     height: 600px;
-    background-image: linear-gradient( rgba( 0, 0, 0, .6), rgba(0, 0, 0, .2)), url('../img/nexus-header.jpg');
+    background-image: linear-gradient( rgba( 0, 0, 0, .6), rgba(0, 0, 0, .2)), url('../img/heros/nexus-header.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -49,7 +49,7 @@ ul li {
 
 /* top image container */
 #images #lg-top {
-    background-image: linear-gradient(to right, rgba(23, 162, 184, .8), rgba(0, 0, 0, .6) ), url('../img/connected-city.jpg');
+    background-image: linear-gradient(to right, rgba(23, 162, 184, .8), rgba(0, 0, 0, .6) ), url('../img/assets/connected-city.jpg');
     background-size: cover;
     background-position: center 40%;
     height: 300px;
@@ -72,7 +72,7 @@ ul li {
 
 /* Large top image hover effect */
 #images #lg-top:hover {
-    background-image: linear-gradient(to right, rgba(23, 162, 184, .9), rgba(0, 0, 0, .8) ), url('../img/connected-city.jpg');
+    background-image: linear-gradient(to right, rgba(23, 162, 184, .9), rgba(0, 0, 0, .8) ), url('../img/assets/connected-city.jpg');
     transition: all .3s ease;
 }
 
@@ -92,7 +92,7 @@ ul li {
 
 #images #box-btm-left {
     height: 300px;
-    background-image: url('../img/our-team.jpg');
+    background-image: url('../img/assets/our-team.jpg');
     background-size: cover;
     background-position: center center;
 }
@@ -100,7 +100,7 @@ ul li {
 #images #box-btm-right {
     position: relative;
     height: 300px;    
-    background-image:url('../img/business-tech.jpg');
+    background-image:url('../img/assets/business-tech.jpg');
     background-size: cover;
 }
 
@@ -109,7 +109,7 @@ ul li {
 }
 
 #images #box-btm-right:hover {
-    background-image: linear-gradient( to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4) ), url('../img/business-tech.jpg');
+    background-image: linear-gradient( to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4) ), url('../img/assets/business-tech.jpg');
 }
 
 #images #box-btm-right:hover h4 {
@@ -118,14 +118,14 @@ ul li {
 }
 
 #strip-div {
-    background-image: linear-gradient(to bottom, rgba(23, 162, 184, .9), rgba(30, 98, 110, 0.815) ), url('../img/office4.jpeg');
+    background-image: linear-gradient(to bottom, rgba(23, 162, 184, .9), rgba(30, 98, 110, 0.815) ), url('../img/assets/office4.jpeg');
     background-position-y: 60%;
 }
 
 /* ///// NEW PAGE ////// Contact Page CSS ////// NEW PAGE ///// */
 #contact-hero {
     height: 600px;
-    background-image: url('../img/office.jpg');
+    background-image: url('../img/heros/office.jpg');
     background-position: bottom center;
     background-size: cover;
 }
@@ -141,25 +141,25 @@ ul li {
 #about-img {
     width: 100%;
     height: 200px;
-    background-image: url('../img/office5.jpeg');
+    background-image: url('../img/assets/office5.jpeg');
     background-size: cover;
     background-position-y: 60%;
 }
 
 #card-top-one {
-    background-image: url('../img/office1.jpeg');
+    background-image: url('../img/assets/office1.jpeg');
     background-size: cover;
     height: 200px;
 }
 
 #card-top-two {
-    background-image: url('../img/office2.jpg');
+    background-image: url('../img/assets/office2.jpg');
     background-size: cover;
     height: 200px;
 }
 
 #card-top-three {
-    background-image: url('../img/office3.jpg');
+    background-image: url('../img/assets/office3.jpg');
     background-size: cover;
     height: 200px;
 }
@@ -172,7 +172,7 @@ ul li {
 /* ///// NEW PAGE ////// Support Page CSS ////// NEW PAGE ///// */
 #support-hero {
     height: 600px;
-    background-image: linear-gradient(rgba(0, 0 ,0 ,.1), rgba(0, 0, 0, .2)) ,url('../img/support2.jpg');
+    background-image: linear-gradient(rgba(0, 0 ,0 ,.1), rgba(0, 0, 0, .2)) ,url('../img/heros/support2.jpg');
     background-position: center bottom;
     background-size: cover;
 }
@@ -346,12 +346,12 @@ ul li {
     background: #72A654;
 }
 
-#server-room {
+/* #server-room {
     height: 300px;
     background-image: linear-gradient( rgba( 0, 0, 0, .1), rgba(23, 162, 184, .2)),url('../img/servers.png');
     background-size: cover;
     background-position: center;
-}
+} */
 
 /* ///// NEW PAGE ////// Client Portal Page CSS ////// NEW PAGE ///// */
 #screen {
@@ -371,7 +371,7 @@ ul li {
 /* ///// NEW PAGE ////// Services Page CSS ////// NEW PAGE ///// */
 #services-hero {
     height: 600px;
-    background-image: url('../img/architecture-buildings-city-533930.jpg');
+    background-image: url('../img/heros/architecture-buildings-city-533930.jpg');
     background-position-y: 50%;
     background-position-x: 70%;
     background-size: cover;
@@ -431,7 +431,7 @@ ul li {
 /* //// Industries Section //// */
 #industries-hero {
     height: 600px;
-    background-image: linear-gradient( rgba( 0, 0, 0, .6), rgba(0, 0, 0, .2)), url('../img/266509.jpg');
+    background-image: linear-gradient( rgba( 0, 0, 0, .6), rgba(0, 0, 0, .2)), url('../img/heros/266509.jpg');
     background-position-y: 50%;
     background-position-x: 70%;
     background-size: cover;
@@ -447,7 +447,7 @@ ul li {
 @media only screen and (min-width: 767px) and (max-width: 991px) {
     #hero {
         height: 600px;
-        background-image: linear-gradient( rgba( 0, 0, 0, .6), rgba(0, 0, 0, .2)), url('../img/nexus-header.jpg');
+        background-image: linear-gradient( rgba( 0, 0, 0, .6), rgba(0, 0, 0, .2)), url('../img/heros/nexus-header.jpg');
         background-position: center;
         background-size: cover;
     }
